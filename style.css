@@ -1,0 +1,133 @@
+header {
+
+	background-color: #686ac8;
+	overflow: auto;
+	margin: auto;
+	padding: 20px;
+	
+	}
+
+.logo {
+
+	color: white;
+	font-size: 30px;
+	margin-top: 30px;
+	text-align: left;
+	float: left;
+}
+
+nav {
+
+	font-size: 20px;
+	float: right;
+	overflow: hidden;
+	
+
+}
+
+nav ul {
+
+	overflow: auto;
+}
+
+nav ul li {
+
+	list-style: none;
+	padding: 15px;
+	float: left;
+	display: inline;
+}
+
+nav ul li a {
+
+	text-decoration: none;
+	float: right;
+	color: white;
+	
+}
+
+.login {
+	background-color: white;
+	color: #686ac8;
+	}
+
+.login a {
+		color: #686ac8;
+}
+
+.content a {
+background-color: white;
+padding: 10px;
+font-size: 20px;
+text-decoration: none;
+color: white;
+background-color: #686ac8;
+border: 1px solid white;
+margin-top: 10px;
+margin-left: 40px;
+}
+
+.content {
+
+	color: white;
+	float: left;
+	width: 50%;
+	display: inline;
+	
+}
+
+.content h1 {
+
+	font-size: 40px;
+	padding: 20px;
+	margin: 20px;
+	
+}
+.content p {
+
+padding: 20px;
+margin: 20px;
+text-align: justify;
+line-height: 25px;
+
+}
+
+.content button {
+
+background-color: #686ac8;
+border: 2px solid white;
+color: white;
+}
+
+.image {
+	width: 50%;
+	float: right;
+}
+.image img {
+	width: 100%;
+}
+
+section {
+
+	float: left;
+}
+
+@media screen and (max-width: 600px) {
+	.logo, nav, nav ul li, .content, .image{
+		display: block;
+		width: 100%;
+		float: none;
+	}
+	nav ul li{
+		padding: 10px 0;
+	}
+
+	nav ul li:last-child{
+		width: 100px;
+		text-align: center;
+	}
+
+	nav ul li a{
+		float: none;
+	}
+}
