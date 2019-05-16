@@ -1,10 +1,14 @@
+body {
+	background-color: #686ac8;
+	width: 80%;
+	margin:auto;
+}
+
 header {
 
-	background-color: #686ac8;
-	overflow: auto;
+		overflow: auto;
 	margin: auto;
-	padding: 20px;
-	
+	padding: 50px;
 	}
 
 .logo {
