@@ -21,9 +21,7 @@ nav {
 	font-size: 20px;
 	float: right;
 	overflow: hidden;
-	
-
-}
+	}
 
 nav ul {
 
@@ -43,8 +41,7 @@ nav ul li a {
 	text-decoration: none;
 	float: right;
 	color: white;
-	
-}
+	}
 
 .login {
 	background-color: white;
@@ -53,7 +50,7 @@ nav ul li a {
 
 .login a {
 		color: #686ac8;
-}
+	}
 
 .content a {
 background-color: white;
@@ -131,3 +128,4 @@ section {
 		float: none;
 	}
 }
+
