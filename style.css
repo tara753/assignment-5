@@ -13,23 +13,19 @@ ul li {
 
 .desktop,
 .mobile {
-	float: right;
-	margin-top: 19px;
+    float: right;
+    margin-top: 19px;
 }
 
 .logo {
     float: left;
     color: var(--color);
-	padding-left: 0;
-	font-size: 28px;
+    padding-left: 0;
+    font-size: 28px;
 }
 
 .logo li {
     float: left;
-}
-
-header {
-    overflow: auto;
 }
 
 .desktop li {
@@ -56,11 +52,15 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+header{
+    overflow: auto;
+}
+
 article {
     margin: 100px auto;
-	overflow: auto;
-	
-	color: var(--color);
+    display: flow-root;
+
+    color: var(--color);
 }
 
 article section:first-child {
@@ -74,27 +74,31 @@ article section:last-child {
 }
 
 section:last-child img {
-	width: 80%;
-	float: right;
-}
-article a{
-	padding: 8px 20px;
-	color: var(--color);
-	background: var(--theme-color);
-	border: 1px solid var(--color);
-	text-decoration: none;
+    width: 80%;
+    float: right;
 }
 
-article a:hover{
-	color: var(--theme-color);
-	background: var(--color);
+article a {
+    padding: 8px 20px;
+    color: var(--color);
+    background: var(--theme-color);
+    border: 1px solid var(--color);
+    text-decoration: none;
 }
-article h1{
-	font-size: 50px;
+
+article a:hover {
+    color: var(--theme-color);
+    background: var(--color);
 }
-article p{
-	line-height: 32px;
+
+article h1 {
+    font-size: 50px;
 }
+
+article p {
+    line-height: 32px;
+}
+
 @media screen and (max-width: 600px) {
     .desktop {
         display: none;
@@ -102,5 +106,78 @@ article p{
 
     .mobile {
         display: block;
+        color: var(--color);
+        position: relative;
+    }
+
+    .mobile i {
+        font-size: 28px;
+    }
+
+    .mobile ul {
+        display: none;
+        position: absolute;
+        width: 40vw;
+        top: 0px;
+        right: 0px;
+        background: var(--color);
+        padding: 10px;
+    }
+
+    .mobile ul li a {
+
+        color: var(--theme-color);
+    }
+
+    .mobile:hover ul {
+        display: block;
+    }
+
+    .logo {
+        margin-top: 13px;
+    }
+
+    body {
+        width: 90%;
+    }
+
+    body article section:first-child {
+        width: 100%;
+    }
+
+    body article section:last-child {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    body article section:last-child img {
+        float: none;
+        text-align: center;
+    }
+
+    article h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    article p {
+        text-align: justify;
+    }
+
+    .mobile a {
+        padding: 5px 10px;
+        display: block;
+    }
+
+    .mobile a:hover {
+        color: var(--color);
+        background: var(--theme-color);
+    }
+
+    header {
+
+        overflow: inherit;
+        display: flow-root;
+    
     }
 }
