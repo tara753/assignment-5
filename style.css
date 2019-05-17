@@ -1,135 +1,106 @@
-body {
-	background-color: #686ac8;
-	width: 80%;
-	margin:auto;
+:root {
+    --color: white;
+    --theme-color: #686ac8;
+}
+
+.mobile {
+    display: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+.desktop,
+.mobile {
+	float: right;
+	margin-top: 19px;
+}
+
+.logo {
+    float: left;
+    color: var(--color);
+	padding-left: 0;
+	font-size: 28px;
+}
+
+.logo li {
+    float: left;
 }
 
 header {
-
-		overflow: auto;
-	margin: auto;
-	padding: 50px;
-	}
-
-.logo {
-
-	color: white;
-	font-size: 30px;
-	margin-top: 30px;
-	text-align: left;
-	float: left;
+    overflow: auto;
 }
 
-nav {
+.desktop li {
+    float: left;
+}
 
-	font-size: 20px;
-	float: right;
-	overflow: hidden;
-	}
+.mobile a,
+.desktop a {
+    text-decoration: none;
+    padding: 8px 20px;
+    color: var(--color);
+}
 
-nav ul {
+.mobile a:hover,
+.desktop a:hover {
+    color: var(--theme-color);
+    background: var(--color);
+}
 
+body {
+    background: var(--theme-color);
+    width: 73%;
+    margin: auto;
+    font-family: 'Lato', sans-serif;
+}
+
+article {
+    margin: 100px auto;
 	overflow: auto;
+	
+	color: var(--color);
 }
 
-nav ul li {
-
-	list-style: none;
-	padding: 15px;
-	float: left;
-	display: inline;
+article section:first-child {
+    float: left;
+    width: 50%;
 }
 
-nav ul li a {
+article section:last-child {
+    float: right;
+    width: 50%;
+}
 
+section:last-child img {
+	width: 80%;
+	float: right;
+}
+article a{
+	padding: 8px 20px;
+	color: var(--color);
+	background: var(--theme-color);
+	border: 1px solid var(--color);
 	text-decoration: none;
-	float: right;
-	color: white;
-	}
-
-.login {
-	background-color: white;
-	color: #686ac8;
-	}
-
-.login a {
-		color: #686ac8;
-	}
-
-.content a {
-background-color: white;
-padding: 10px;
-font-size: 20px;
-text-decoration: none;
-color: white;
-background-color: #686ac8;
-border: 1px solid white;
-margin-top: 10px;
-margin-left: 40px;
 }
 
-.content {
-
-	color: white;
-	float: left;
-	width: 50%;
-	display: inline;
-	
+article a:hover{
+	color: var(--theme-color);
+	background: var(--color);
 }
-
-.content h1 {
-
-	font-size: 40px;
-	padding: 20px;
-	margin: 20px;
-	
+article h1{
+	font-size: 50px;
 }
-.content p {
-
-padding: 20px;
-margin: 20px;
-text-align: justify;
-line-height: 25px;
-
+article p{
+	line-height: 32px;
 }
-
-.content button {
-
-background-color: #686ac8;
-border: 2px solid white;
-color: white;
-}
-
-.image {
-	width: 50%;
-	float: right;
-}
-.image img {
-	width: 100%;
-}
-
-section {
-
-	float: left;
-}
-
 @media screen and (max-width: 600px) {
-	.logo, nav, nav ul li, .content, .image{
-		display: block;
-		width: 100%;
-		float: none;
-	}
-	nav ul li{
-		padding: 10px 0;
-	}
+    .desktop {
+        display: none;
+    }
 
-	nav ul li:last-child{
-		width: 100px;
-		text-align: center;
-	}
-
-	nav ul li a{
-		float: none;
-	}
+    .mobile {
+        display: block;
+    }
 }
-
